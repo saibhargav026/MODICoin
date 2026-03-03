@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODI Coin — The People's Memecoin of India</title>
+    <meta name="description" content="MODI Coin is India's ultimate community-driven memecoin on the Solana blockchain. Fast, low-cost, and built for the people.">
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/logo.svg" alt="MODI Coin" class="nav-logo-img">
+                <span class="nav-logo-text">MODI</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#tokenomics">Tokenomics</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#how-to-buy">How to Buy</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="#how-to-buy" class="nav-cta">Buy $MODI</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Built on Solana</div>
+            <h1 class="hero-title">
+                The People's<br>
+                <span class="hero-highlight">Memecoin</span><br>
+                of India
+            </h1>
+            <p class="hero-subtitle">MODI Coin is a community-powered memecoin on Solana. Lightning fast. Near-zero fees. Made for the people, by the people.</p>
+            <div class="hero-actions">
+                <a href="#how-to-buy" class="btn btn-primary">Buy $MODI</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+            <div class="hero-contract">
+                <span class="contract-label">Contract Address</span>
+                <div class="contract-box" id="contractBox">
+                    <span class="contract-addr" id="contractAddr">Coming Soon — Token Launch Pending</span>
+                    <button class="copy-btn" id="copyBtn" title="Copy address">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-value" data-target="1000000000">0</span>
+                    <span class="stat-label">Total Supply</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">Solana</span>
+                    <span class="stat-label">Blockchain</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">0%</span>
+                    <span class="stat-label">Tax</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="coin-wrapper">
+                <img src="assets/logo.svg" alt="MODI Coin" class="hero-coin">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About</span>
+                <h2 class="section-title">Why MODI Coin?</h2>
+                <p class="section-desc">MODI Coin is more than a meme. It is a movement, a voice, and a symbol of India's entry into the global crypto revolution.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Built on Solana with 400ms finality. Send MODI anywhere in the world in under a second.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF9933" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>Near-Zero Fees</h3>
+                    <p>Transactions cost a fraction of a penny. No gas wars. No hidden charges. Truly accessible.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#138808" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <h3>Community Driven</h3>
+                    <p>No VC backing, no insider allocations. MODI Coin belongs to the community. Your coin, your voice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section class="tokenomics" id="tokenomics">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Tokenomics</span>
+                <h2 class="section-title">Fair Distribution</h2>
+                <p class="section-desc">Designed for fairness. No hidden wallets. No team dumps. Transparent from day one.</p>
+            </div>
+            <div class="tokenomics-content">
+                <div class="tokenomics-chart">
+                    <div class="donut-chart">
+                        <svg viewBox="0 0 200 200" class="donut-svg">
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="#1a1a2e" stroke-width="32"/>
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="#FF9933" stroke-width="32" stroke-dasharray="201 503" stroke-dashoffset="0" class="donut-segment" data-percent="40"/>
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="#FFD700" stroke-width="32" stroke-dasharray="151 503" stroke-dashoffset="-201" class="donut-segment" data-percent="30"/>
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="#138808" stroke-width="32" stroke-dasharray="100 503" stroke-dashoffset="-352" class="donut-segment" data-percent="20"/>
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="#ffffff" stroke-width="32" stroke-dasharray="50 503" stroke-dashoffset="-452" class="donut-segment" data-percent="10" opacity="0.3"/>
+                        </svg>
+                        <div class="donut-center">
+                            <span class="donut-total">1B</span>
+                            <span class="donut-label">Total Supply</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tokenomics-details">
+                    <div class="token-item">
+                        <div class="token-color" style="background:#FF9933"></div>
+                        <div class="token-info">
+                            <span class="token-name">Liquidity Pool</span>
+                            <span class="token-percent">40%</span>
+                        </div>
+                        <span class="token-amount">400,000,000</span>
+                    </div>
+                    <div class="token-item">
+                        <div class="token-color" style="background:#FFD700"></div>
+                        <div class="token-info">
+                            <span class="token-name">Community Airdrop</span>
+                            <span class="token-percent">30%</span>
+                        </div>
+                        <span class="token-amount">300,000,000</span>
+                    </div>
+                    <div class="token-item">
+                        <div class="token-color" style="background:#138808"></div>
+                        <div class="token-info">
+                            <span class="token-name">Development</span>
+                            <span class="token-percent">20%</span>
+                        </div>
+                        <span class="token-amount">200,000,000</span>
+                    </div>
+                    <div class="token-item">
+                        <div class="token-color" style="background:rgba(255,255,255,0.3)"></div>
+                        <div class="token-info">
+                            <span class="token-name">Marketing</span>
+                            <span class="token-percent">10%</span>
+                        </div>
+                        <span class="token-amount">100,000,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="roadmap" id="roadmap">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Roadmap</span>
+                <h2 class="section-title">The Journey Ahead</h2>
+                <p class="section-desc">A clear path from launch to global recognition.</p>
+            </div>
+            <div class="roadmap-timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-phase">Phase 1</span>
+                        <h3>Launch</h3>
+                        <ul>
+                            <li>Token creation on Solana</li>
+                            <li>Website launch</li>
+                            <li>Community building — Telegram and Twitter</li>
+                            <li>Initial liquidity on Raydium DEX</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-phase">Phase 2</span>
+                        <h3>Growth</h3>
+                        <ul>
+                            <li>Community airdrop campaign</li>
+                            <li>CoinGecko and CoinMarketCap listings</li>
+                            <li>Influencer partnerships</li>
+                            <li>1,000+ holders milestone</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-phase">Phase 3</span>
+                        <h3>Expansion</h3>
+                        <ul>
+                            <li>CEX exchange listings</li>
+                            <li>NFT collection launch</li>
+                            <li>Strategic partnerships in India</li>
+                            <li>10,000+ holders milestone</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-phase">Phase 4</span>
+                        <h3>Dominance</h3>
+                        <ul>
+                            <li>Major exchange listings</li>
+                            <li>MODI merchandise store</li>
+                            <li>Global marketing push</li>
+                            <li>100,000+ holders milestone</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Buy Section -->
+    <section class="how-to-buy" id="how-to-buy">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get Started</span>
+                <h2 class="section-title">How to Buy $MODI</h2>
+                <p class="section-desc">Get your MODI Coins in four simple steps.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3>Create a Wallet</h3>
+                    <p>Download Phantom Wallet from phantom.app. Available on desktop and mobile. Set up your wallet and save your recovery phrase securely.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3>Get SOL</h3>
+                    <p>Buy SOL from any exchange like WazirX, CoinDCX, or Binance. Transfer it to your Phantom wallet address.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3>Visit Raydium</h3>
+                    <p>Go to raydium.io and connect your Phantom wallet. Navigate to the swap interface to trade SOL for MODI.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <h3>Swap for $MODI</h3>
+                    <p>Paste the MODI contract address, set the amount of SOL you want to swap, and confirm the transaction. Welcome aboard.</p>
+                </div>
+            </div>
+            <div class="buy-contract">
+                <span class="contract-label">MODI Contract Address</span>
+                <div class="contract-box" id="contractBox2">
+                    <span class="contract-addr">Coming Soon — Token Launch Pending</span>
+                    <button class="copy-btn" id="copyBtn2" title="Copy address">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community" id="community">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Join Us</span>
+                <h2 class="section-title">Community</h2>
+                <p class="section-desc">Be part of the movement. Connect with fellow MODI holders.</p>
+            </div>
+            <div class="community-grid">
+                <a href="#" class="community-card" target="_blank" rel="noopener">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                    <span>Telegram</span>
+                </a>
+                <a href="#" class="community-card" target="_blank" rel="noopener">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    <span>Twitter / X</span>
+                </a>
+                <a href="#" class="community-card" target="_blank" rel="noopener">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    <span>Instagram</span>
+                </a>
+                <a href="#" class="community-card" target="_blank" rel="noopener">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 01-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 01.042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 014.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 01.14-.197.35.35 0 01.238-.042l2.906.617a1.214 1.214 0 011.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 00-.231.094.33.33 0 000 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 00.029-.463.33.33 0 00-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 00-.232-.095z"/></svg>
+                    <span>Reddit</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Common Questions</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is MODI Coin?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>MODI Coin is a community-driven memecoin built on the Solana blockchain. It celebrates the spirit of India and is designed for fast, low-cost transactions accessible to everyone.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I buy MODI Coin?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Create a Phantom wallet, buy SOL from any exchange, transfer SOL to Phantom, then swap it for MODI on Raydium DEX using the contract address listed on this site.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is there a transaction tax?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No. MODI Coin has zero buy and sell tax. What you trade is exactly what you get. No hidden fees.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Why Solana instead of Ethereum?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Solana offers transaction speeds under 1 second and fees less than $0.001. Ethereum gas fees can range from $5 to $200. Solana makes MODI accessible to everyone, especially in India.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is MODI Coin safe?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>MODI Coin uses the standard Solana SPL token program. There are no hidden mint functions or freeze authorities. The contract is transparent and verifiable on-chain. Always DYOR (Do Your Own Research) before investing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="assets/logo.svg" alt="MODI Coin" class="footer-logo">
+                    <span class="footer-name">MODI Coin</span>
+                    <p class="footer-tagline">The People's Memecoin of India</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#tokenomics">Tokenomics</a>
+                    <a href="#roadmap">Roadmap</a>
+                    <a href="#how-to-buy">How to Buy</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Telegram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+                    <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="disclaimer">MODI Coin is a memecoin created for entertainment purposes. It is not affiliated with any political party, government entity, or public figure. Cryptocurrency investments carry risk. Always do your own research before investing. This is not financial advice.</p>
+                <p class="copyright">2026 MODI Coin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
